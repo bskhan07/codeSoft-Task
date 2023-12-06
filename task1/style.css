@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+header nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 150px;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+header nav ul li {
+  cursor: pointer;
+  transition: all ease-in 0.1s;
+}
+header nav ul li:hover {
+  color: pink;
+}
+header button {
+  outline: none;
+  cursor: pointer;
+  padding: 13px 20px;
+  background: transparent;
+  border-radius: 30px;
+  font-size: 17px;
+  border: 1px solid black;
+  font-weight: bold;
+  transition: all ease-in 0.2s;
+}
+header button:hover {
+  color: white;
+  border: white;
+  border: 1px solid white;
+  background-color: pink;
+}
+
+/* main section start  */
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1568992687947-868a62a9f521?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+main .poster-heading {
+  padding: 0px 150px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  gap: 20px;
+}
+main .poster-heading h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+main .poster-heading h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+main .poster-heading-btn {
+  display: flex;
+  gap: 20px;
+}
+
+main .poster-heading-btn :nth-child(1) {
+  color: white;
+  border: white;
+  border: 1px solid white;
+  background-color: pink;
+  outline: none;
+  cursor: pointer;
+  padding: 13px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 17px;
+}
+main .poster-heading-btn :nth-child(2) {
+  outline: none;
+  cursor: pointer;
+  padding: 15px 12px;
+  background: transparent;
+  border-radius: 30px;
+  font-size: 17px;
+  border: 1px solid black;
+  font-weight: bold;
+  transition: all ease-in 0.2s;
+}
+
+main .poster-heading-btn :nth-child(1):hover {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+main .poster-heading-btn :nth-child(2):hover {
+  background-color: pink;
+  color: white;
+  border: 1px solid white;
+}
+
+main .about-us-section {
+  padding: 50px 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .about-us-section .about-us {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+main .about-us-section .about-us h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: pink;
+}
+main .about-us-section .about-us button {
+  outline: none;
+  cursor: pointer;
+  padding: 13px 20px;
+  background: transparent;
+  border-radius: 30px;
+  color: pink;
+  font-size: 17px;
+  border: 1px solid pink;
+  font-weight: bold;
+  transition: all ease-in 0.2s;
+}
+
+main .about-us-section .about-us button:hover{
+  background-color: pink;
+  color: white;
+  
+}
+
+main .about-us-section .about-us-img {
+  width: 350px;
+}
+
+main .about-us-section .about-us-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+main .services-section {
+  width: 100%;
+  background-color: rgb(253, 243, 246);
+  padding: 0px 150px;
+}
+
+main .services-section .services-heading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 0;
+  gap: 10px;
+  align-items: center;
+}
+
+main .services-section .services-heading h2 {
+  font-size: 46px;
+}
+
+main .services-section .services-heading .services-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+main .services-section .services-heading .services-cards .card {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 300px;
+  gap: 20px;
+  cursor: pointer;
+  padding: 50px 20px;
+  transition: all ease-in 0.3s;
+  border-radius: 30px;
+}
+
+main .services-section .services-heading .services-cards .card:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: white;
+}
+main .services-section .services-heading .services-cards .card .icon-circle {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .services-section .services-heading .services-cards .card .icon-circle i {
+  color: pink;
+  font-size: 50px;
+}
+
+main .services-section .services-heading .services-cards .card :nth-child(2) {
+  font-size: 26px;
+  text-align: center;
+}
+
+main .services-section .services-heading .services-cards .card :nth-child(3) {
+  text-align: center;
+}
+
+main footer {
+  padding: 50px 150px;
+  display: flex;
+}
+
+main footer .first-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 30%;
+}
+
+main footer .fourth-col {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+main footer .second-col {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main footer .second-col ul {
+  list-style: none;
+  line-height: 2;
+}
+
+main footer .third-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 20%;
+}
+main footer .third-col ul {
+  list-style: none;
+  line-height: 2;
+}
+
+
+main footer .fourth-col input{
+  width: 80%;
+  outline: none;
+  font-size: 17px;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 30px;
+}
