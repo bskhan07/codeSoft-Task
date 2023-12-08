@@ -226,26 +226,29 @@ main .services-section .services-heading .services-cards .card :nth-child(3) {
 }
 
 main footer {
-  padding: 50px 150px;
+  padding: 50px ;
   display: flex;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 main footer .first-col {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 30%;
+  
 }
 
 main footer .fourth-col {
-  width: 30%;
+  
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
 main footer .second-col {
-  width: 20%;
+  
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -259,7 +262,7 @@ main footer .third-col {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 20%;
+  
 }
 main footer .third-col ul {
   list-style: none;
@@ -274,4 +277,34 @@ main footer .fourth-col input{
   border: 1px solid black;
   padding: 15px;
   border-radius: 30px;
+}
+
+
+@media only screen and (max-width: 1000px){
+header nav{
+  padding: 15px 50px ;
+}
+main .poster-heading {
+  padding: 0 ;
+  text-align: center;
+  justify-content: center;
+}
+main .poster-heading-btn{
+  justify-content: center;
+}
+main .about-us-section{
+  justify-content: center;
+  padding: 0px; 
+}
+
+}
+
+@media only screen and (max-width: 858px){
+  header nav{
+    justify-content: space-evenly;
+    padding: 15px 0 ;
+  }
+  header nav ul{
+    display: none;
+  }
 }
